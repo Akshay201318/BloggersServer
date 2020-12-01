@@ -4,6 +4,7 @@ const router = express.Router();
 
 const usersApi = require('../../controllers/api/usersApi');
 
-router.get('/', usersApi.index);
+router.post('/signup', usersApi.signUp);
+router.post('/login', usersApi.login);
 
 module.exports = router;
