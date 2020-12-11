@@ -74,3 +74,10 @@ module.exports.login = async (req, res) => {
     });
   }
 };
+
+module.exports.google = async (req, res) => {
+  
+  return res.status(200).json({
+    data: true,
+  });
+};

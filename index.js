@@ -10,6 +10,7 @@ const db = require('./config/mongoose');
 
 const app = express();
 app.use(cors());
+app.use(passport.initialize());
 
 const morgan = require('morgan');
 
